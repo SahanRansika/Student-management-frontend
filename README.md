@@ -1,37 +1,236 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 Student Management System - Frontend
 
-## Getting Started
+A modern **Next.js** frontend for managing students with authentication, dashboard, search, and responsive UI.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔐 Login & Register
+- 🎓 Student Management
+- 📊 Dashboard
+- 🔍 Search Students
+- 📱 Responsive Design
+- 🎨 Tailwind CSS UI
+- 🌐 API Integration
+- ⚡ Fast Navigation
+- 🔒 Protected Routes
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- Axios
+- React Hook Form
+
+---
+
+## 📂 Project Structure
+
+```
+frontend
+│
+├── src
+│   ├── app
+│   │    ├── login
+│   │    ├── dashboard
+│   │    ├── students
+│   │    └── register
+│   │
+│   ├── components
+│   ├── contexts
+│   ├── services
+│   ├── hooks
+│   ├── lib
+│   └── types
+│
+├── public
+├── package.json
+└── tailwind.config.js
+```
+
+---
+
+# ⚙️ Requirements
+
+- Node.js 18+
+- npm
+
+---
+
+# 📥 Installation
+
+Clone Repository
+
+```bash
+git clone https://github.com/SahanRansika/Student-management-frontend.git
+
+cd Student-management-frontend
+```
+
+---
+
+# Install Packages
+
+```bash
+npm install --legacy-peer-deps
+```
+
+---
+
+# Environment Variables
+
+Create
+
+```
+.env.local
+```
+
+Add
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8080/api
+```
+
+---
+
+# Run Project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Application runs at
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+# 📱 Pages
 
-To learn more about Next.js, take a look at the following resources:
+- Login
+- Register
+- Dashboard
+- Students
+- Add Student
+- Edit Student
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# 🎨 UI Features
 
-## Deploy on Vercel
+- Responsive Layout
+- Dark/Light Friendly Design
+- Sidebar Navigation
+- Search Bar
+- Cards
+- Tables
+- Toast Notifications
+- Loading Spinner
+- Form Validation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# Student-management-frontend" 
+# 📦 Production Build
+
+```bash
+npm run build
+```
+
+Run
+
+```bash
+npm start
+```
+
+---
+
+# 🌐 Backend Connection
+
+Default
+
+```
+http://localhost:8080/api
+```
+
+Change
+
+```
+.env.local
+```
+
+```env
+NEXT_PUBLIC_API_URL=https://your-backend-url/api
+```
+
+---
+
+# 🚀 Deployment
+
+Frontend can be deployed using
+
+- Vercel
+- Netlify
+
+---
+
+# 🛠 Common Errors
+
+## API Not Working
+
+Check
+
+```
+NEXT_PUBLIC_API_URL
+```
+
+Backend must be running.
+
+---
+
+## Build Error
+
+```bash
+rm -rf node_modules
+```
+
+Install again
+
+```bash
+npm install --legacy-peer-deps
+```
+
+---
+
+# 📷 Screenshots
+
+- Login
+- Dashboard
+- Student List
+- Student Form
+
+(Add your own screenshots here.)
+
+---
+
+# 👨‍💻 Author
+
+Sahan Ransika
+
+GitHub
+
+https://github.com/SahanRansika
+
+Backend Repository
+
+https://github.com/SahanRansika/Student-management-backend
+
+---
+
+⭐ If you like this project, please give it a Star!
