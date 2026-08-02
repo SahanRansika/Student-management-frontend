@@ -73,9 +73,23 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       
       setUser(userData);
       console.log('Login successful:', userData);
+      toast.success('Welcome back! 🎉');
       
     } catch (error: any) {
       console.error('Login error:', error);
+      
+      let errorMessage = 'Login failed';
+      if (error.response?.status === 403) {
+        errorMessage = 'Access denied. Please check your credentials.';
+      } else if (error.response?.data?.error) {
+        errorMessage = error.response.data.error;
+      } else if (error.response?.data?.message) {
+        errorMessage = error.response.data.message;
+      } else if (error.message) {
+        errorMessage = error.message;
+      }
+      
+      toast.error(errorMessage);
       throw error;
     }
   };
